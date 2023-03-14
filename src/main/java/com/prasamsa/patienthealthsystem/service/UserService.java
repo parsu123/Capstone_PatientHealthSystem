@@ -4,8 +4,6 @@ import com.prasamsa.patienthealthsystem.model.UpdateUser;
 import com.prasamsa.patienthealthsystem.model.User;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public interface UserService {
 
