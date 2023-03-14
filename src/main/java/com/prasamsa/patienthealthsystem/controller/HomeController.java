@@ -38,9 +38,9 @@ public class HomeController {
         return "login";
     }
 
-    @GetMapping("/services")
+    @GetMapping("/service")
     public String services() {
-        return "services";
+        return "service";
     }
 
     @GetMapping("/admin")
