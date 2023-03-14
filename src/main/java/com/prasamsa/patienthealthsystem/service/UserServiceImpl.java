@@ -1,11 +1,14 @@
 package com.prasamsa.patienthealthsystem.service;
 
+import com.prasamsa.patienthealthsystem.model.UpdateUser;
 import com.prasamsa.patienthealthsystem.model.User;
 import com.prasamsa.patienthealthsystem.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -30,8 +33,16 @@ public class UserServiceImpl implements UserService{
         return userRepo.existsByEmail(email);
     }
 
+    public UpdateUser updateUser(UpdateUser update)  {
 
+        userRepo.update(update.getFirstName(),update.getLastName(),update.getDob(),update.getEmail());
+        return null;
+    }
 
+    public String deleteUser(String email) {
+        userRepo.delete(email);
+        return null;
+    }
 
 }
 

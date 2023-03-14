@@ -27,8 +27,8 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    //@DateTimeFormat(pattern="yyyy-MM-dd")
-    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern="yyyy-MM-dd")
+    //@Temporal(TemporalType.DATE)
     private Date dob;
     private String password;
 

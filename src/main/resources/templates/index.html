@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <!-- <meta charset="UTF-8">
+     <meta name="viewport"
+           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
     <title>Document</title>
 
-   <link rel ="stylesheet" href="" th:href="@{/}">
+    <!--link rel ="stylesheet" href="" th:href="@{/}">-->
     <style>
         h1{
             font-color:red;
@@ -22,14 +22,56 @@
 </head>
 <body>
 
-    <section>
-        <h1 >WELCOME TO YOUR LOCAL HOSPITAL</h1>
-        <p> This community Welcomes all the residents for state of the art medical needs</p>
+<!--<section>
+    <h1 >WELCOME TO YOUR LOCAL HOSPITAL</h1>
+    <p> This community Welcomes all the residents for state of the art medical needs</p>
 
-    </section>
+</section>-->
+<section>
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img style ="object-fit:cover;" th:src="@{${'/image/hosp1.jpg'}}"class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Our World Class Facility</h5>
+                <p>Whether you are sick or you just want to have a feel of our facility, just show up!!!</p>
+            </div>
 
 
+        </div>
+        <div class="carousel-item">
+            <img style ="background-size:cover;" th:src="@{${'/image/hosp2.jpg'}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Our Connected Building system provides convenience of Access</h5>
+                <p>Makes life easier for our staffs, patients and their families!!</p>
+            </div>
 
+        </div>
+        <div class="carousel-item">
+            <img style ="background-size:cover;" th:src="@{${'/image/hosp3.jpg'}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5> Superior Services</h5>
+                <p>With world class infrastructures and surgeons, a patient won't even feel a patient!!</p>
+            </div>
+
+
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</section>
 
 </body>
 </html>

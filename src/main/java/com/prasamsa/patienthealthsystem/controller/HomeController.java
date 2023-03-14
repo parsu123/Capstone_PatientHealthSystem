@@ -38,9 +38,9 @@ public class HomeController {
         return "login";
     }
 
-    @GetMapping("/patient")
-    public String patient() {
-        return "patient";
+    @GetMapping("/services")
+    public String services() {
+        return "services";
     }
 
     @GetMapping("/admin")
